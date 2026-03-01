@@ -38,7 +38,7 @@ def create_archive(filename: str) -> None:
         file = open(filename, "w")
         print(cyan(" Storage unit created successfully..."))
     except (PermissionError, OSError) as e:
-        print(mag(" 🚨 ERROR: ") + f"{e}")
+        print(mag(" ERROR: ") + f"{e}")
         return
     finally:
         print()
@@ -55,7 +55,7 @@ def create_archive(filename: str) -> None:
             file.write(entry)
             print(f" {entry}")
     except (OSError) as e:
-        print(mag(" 🚨 ERROR: ") + f"{e}")
+        print(mag(" ERROR: ") + f"{e}")
         return
     finally:
         print(" " + "-" * 60)
