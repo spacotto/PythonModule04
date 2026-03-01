@@ -1,6 +1,7 @@
 # Helpers
 data_generator.py
-sample_data.json
+*.json
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
