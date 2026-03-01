@@ -1,3 +1,7 @@
+# Helpers
+data_generator.py
+sample_data.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
