@@ -15,6 +15,18 @@ def bold(text: str) -> str:
     return f"{w}{text}{r}"
 
 
+def cyan(text: str) -> str:
+    """A function making strings of text bold and cyan."""
+    c, r = "\033[1;96m", "\033[0m"
+    return f"{c}{text}{r}"
+
+
+def mag(text: str) -> str:
+    """A function making strings of text bold and magenta."""
+    m, r = "\033[1;95m", "\033[0m"
+    return f"{m}{text}{r}"
+
+
 def recover_ancient_text(filename: str) -> None:
     """Recover and display data from a given file."""
     print("\n" + bold(" 📜 CYBER ARCHIVES - DATA RECOVERY SYSTEM"))
@@ -23,7 +35,7 @@ def recover_ancient_text(filename: str) -> None:
 
     try:
         file = open(filename, "r")
-        print(" Connection established...\n")
+        print(cyan(" Connection established...\n"))
         content = file.read()
         print(bold(" RECOVERED DATA:"))
         print(" " + "-" * 60)
@@ -33,7 +45,7 @@ def recover_ancient_text(filename: str) -> None:
         print(" Data recovery complete. Storage unit disconnected.")
         print()
     except FileNotFoundError:
-        print(bold(" 🚨 ERROR: ") + "Storage vault not found!")
+        print(mag(" ERROR: ") + "Storage vault not found!")
         print(" Have you tried to run data generator first?")
         print(" Are you sure filename is correct?")
         print()
