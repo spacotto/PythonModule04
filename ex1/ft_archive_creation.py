@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 """
-ft_archive_creation.py - Archive Creation Module
-
+Exercise 1: Archive Creation
 This module creates new archive entries in the Cyber Archives
 preservation system.
 
