@@ -2,10 +2,9 @@
 
 """
 Exercise 1: Archive Creation
-This module creates new archive entries in the Cyber Archives
-preservation system.
 
-Objective: write into files.
+This module creates new archive entries in the Cyber Archives
+preservation system. Objective: write into files.
 """
 
 
