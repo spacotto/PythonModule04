@@ -27,20 +27,21 @@ def mag(text: str) -> str:
     return f"{m}{text}{r}"
 
 
-def secure_extraction(filename: str) -> None:
+def secure_extraction(filename: str) -> str:
     """Perform secure file opening and reading."""
     try:
         with open(filename, "r") as vault:
             extracted_data = vault.read()
-        print(extracted_data)
+        return extracted_data
     except (FileNotFoundError, OSError) as e:
         print(mag(" ERROR!") + f"{e}")
+        return ""
 
 
 def secure_preservation(src: str, dst: str) -> None:
     """Perform secure file opening and writing."""
     extracted_data = secure_extraction(src)
-    if not extracted_data:
+    if extracted_data == "":
         return
     try:
         with open(dst, "w") as vault:
@@ -60,7 +61,7 @@ def main() -> None:
 
     print(bold("\n SECURE EXTRACTION:"))
     print(" " + "-" * 60)
-    extracted_data = secure_extraction("classified_data.txt")
+    print(secure_extraction("classified_data.txt"))
     print(" " + "-" * 60)
 
     print(bold("\n SECURE PRESERVATION:"))
