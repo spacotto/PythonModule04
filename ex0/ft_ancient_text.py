@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-ft_ancient_text.py - Ancient Text Recovery Module
-
+Exercise 0: Ancient Text Recovery
 This module recovers ancient data fragments from storage vaults
 in the Cyber Archives system.
 
