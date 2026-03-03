@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-ft_stream_management.py - Stream Management Module
+Exercise 2: Stream Management
 
 This module demonstrates the use of the three sacred data channels
 of the Cyber Archives: stdin, stdout, and stderr.
