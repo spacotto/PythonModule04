@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Exercise 0: Ancient Text Recovery
+
 This module recovers ancient data fragments from storage vaults
 in the Cyber Archives system.
 
