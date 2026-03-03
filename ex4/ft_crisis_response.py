@@ -36,10 +36,18 @@ def crisis_handler(filename: str) -> None:
               " Attempting access to '{filename}'...")
         print(cyan(" SUCCESS: Archive recovered: ") + f"'{content}'")
         print(" STATUS: Normal operations resumed")
+    except FileNotFoundError:
+        print(f" {bold('CRISIS ALERT:')} Attempting access to '{filename}'...")
+        print(mag(" RESPONSE: Archive not found in storage matrix"))
+        print(" STATUS: Crisis handled, system stable")
+    except PermissionError:
+        print(f" {bold('CRISIS ALERT:')} Attempting access to '{filename}'...")
+        print(mag(" RESPONSE: Security protocols deny access"))
+        print(" STATUS: Crisis handled, security maintained")
     except OSError as e:
         print(f" {bold('CRISIS ALERT:')} Attempting access to '{filename}'...")
         print(mag(f" RESPONSE: {e}"))
-        print(" STATUS: Crisis handled, system stable")
+        print(" STATUS: Crisis handled")
     finally:
         print()
 
