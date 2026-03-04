@@ -9,6 +9,9 @@ Git clone the repository:
 git clone https://github.com/spacotto/Python_Module04.git
 ```
 
+>[!CAUTION]
+>All exercises testing `"r"` require files to work. Create them or change the file names in `main()`.
+
 ## Theoretical Concepts
 
 The theoretical concepts covered in this module are documented in my separate notes repository: 
